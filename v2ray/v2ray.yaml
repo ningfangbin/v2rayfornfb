@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-11-22 10:32:42
+# 创建时间：2023-11-22 14:07:11
 # 使用模版：V2RaySE 默认模版
-# 节点数量：8
+# 节点数量：6
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,14 +85,12 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"ssr","server":"cm01.newcome.xyz","port":7703,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"ssr","server":"112.16.244.101","port":5501,"password":"renzhecloud","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"277272:LzSb2q"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_3","type":"ssr","server":"112.16.244.108","port":5503,"password":"renzhecloud","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"277272:LzSb2q"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_4","type":"ssr","server":"cm01.newcome.xyz","port":7704,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_5","type":"ssr","server":"cm01.newcome.xyz","port":7700,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
-  - {"name":"🇺🇸_US_美国","type":"vmess","server":"104.22.75.105","port":8880,"cipher":"auto","uuid":"617c9bc4-4116-41c6-99e0-ace49a38fcdb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Jnv8ViZOUVgijjOh0p5uGjHnXIiY","headers":{"host":"fr7.tehme100.fun"}}}
-  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度","type":"vmess","server":"mm2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm2.shabijichang.com"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_6","type":"ssr","server":"120.240.88.111","port":7709,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"ssr","server":"cm01.newcome.xyz","port":7700,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"trojan","server":"other.kunlun-ppg.com","port":10850,"udp":true,"password":"3c476664-ae72-476c-b67d-e69a1729a05f","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_3","type":"ssr","server":"cm01.newcome.xyz","port":7703,"password":"jFa4F1","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"84263:3gj7aB"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_4","type":"ssr","server":"bs3.jymzffbquawl.com","port":5502,"password":"renzhecloud","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"277272:LzSb2q"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_5","type":"ssr","server":"112.16.244.108","port":5503,"password":"renzhecloud","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_sha1","obfs-param":"TG@wangcai_1","protocol-param":"277272:LzSb2q"}
+  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vmess","server":"156.225.67.96","port":443,"cipher":"auto","uuid":"5a4d69ad-20a9-4941-b223-87bbd09f5f52","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1696251693048"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -104,9 +102,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -118,9 +114,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -132,9 +126,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: 📲 电报信息
     type: select
     proxies:
@@ -145,9 +137,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -158,9 +148,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -171,9 +159,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -201,9 +187,7 @@ proxy-groups:
       - 🇨🇳_CN_中国->🇺🇸_US_美国_3
       - 🇨🇳_CN_中国->🇺🇸_US_美国_4
       - 🇨🇳_CN_中国->🇺🇸_US_美国_5
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_6
+      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
 
 rules:
 # 本地/局域网地址
