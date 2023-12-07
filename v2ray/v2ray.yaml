@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2023-12-07 15:44:25
+# 客户端：Clash
+# 创建时间：2023-12-07 15:48:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：8
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -88,8 +87,6 @@ dns:
 proxies:
   - {"name":"🇺🇸_US_美国_1","type":"trojan","server":"167.68.5.183","port":443,"udp":true,"password":"d2698cf9-c47e-455c-8384-12e642cbba15","sni":"6us3.pqjc.buzz","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/pq/us3"}}
   - {"name":"🇸🇪_SE_瑞典","type":"vmess","server":"80.240.113.10","port":443,"cipher":"auto","uuid":"71617e43-2715-4f7c-8db3-a5c854e2f188","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/MEHDI","headers":{"host":"teletv.onthewifi.com"}}}
-  - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vless","server":"104.21.20.148","port":8443,"uuid":"acca9938-3695-43df-872a-9c7d2b11f3bd","tls":true,"servername":"felinetest.site","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vless","server":"104.31.16.36","port":443,"uuid":"376b9861-2fc6-4647-959c-18185cd9c95a","tls":true,"servername":"lmn37.sbs","network":"ws","ws-opts":{"path":"/fflsws"}}
   - {"name":"🇺🇸_US_美国_2","type":"trojan","server":"bookmark.missionsec.io","port":443,"udp":true,"password":"E3eC7axKyyplANFa63Z945qDDYnuO2SRlpIwC33SCB8DgS8zRYa0xTXOjAFceZ","sni":"bookmark.missionsec.io","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇫🇷_FR_法国_1","type":"ss","server":"54.36.174.181","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
   - {"name":"🇬🇧_GB_英国","type":"vmess","server":"172.99.190.109","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws"}}
@@ -104,8 +101,6 @@ proxy-groups:
       - DIRECT
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -120,8 +115,6 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -136,8 +129,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -151,8 +142,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -166,8 +155,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -181,8 +168,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
@@ -213,8 +198,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇺🇸_US_美国_1
       - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_2
       - 🇫🇷_FR_法国_1
       - 🇬🇧_GB_英国
