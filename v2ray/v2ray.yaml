@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-12-19 09:55:58
+# 创建时间：2023-12-19 13:47:50
 # 使用模版：V2RaySE 默认模版
 # 节点数量：5
 ####################################
@@ -85,11 +85,11 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"52.33.95.19","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇺🇸_US_美国_1","type":"trojan","server":"8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi","port":8443,"udp":true,"password":"8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=","sni":"ams-trojan-grpc.carfin.tech","skip-cert-verify":true,"network":"grpc","grpc-opts":{"grpc-service-name":"@apt_mahdi"}}
   - {"name":"🇩🇪_DE_德国","type":"trojan","server":"5.104.107.143","port":443,"udp":true,"password":"6befeeb3-702b-4948-9028-f9e072f2da98","skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇺🇸_US_美国_2","type":"ss","server":"35.90.10.174","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇺🇸_US_美国_3","type":"ss","server":"94.131.115.129","port":38108,"password":"bNUe0jR9rzsvLEzfPmI4Of","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧_GB_英国","type":"vmess","server":"172.99.190.109","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws"}}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"us1.awslcn.info","port":25256,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"104.18.212.188","port":8080,"cipher":"auto","uuid":"4e1fb101-e96a-4a7e-d936-13aeee7bd132","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ray","headers":{"host":"rn2.hostmjj.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -99,8 +99,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -110,8 +110,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -121,8 +121,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: 📲 电报信息
     type: select
     proxies:
@@ -131,8 +131,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -141,8 +141,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -151,8 +151,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -178,8 +178,8 @@ proxy-groups:
       - 🇺🇸_US_美国_1
       - 🇩🇪_DE_德国
       - 🇺🇸_US_美国_2
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇺🇸_US_美国_3
-      - 🇬🇧_GB_英国
 
 rules:
 # 本地/局域网地址
