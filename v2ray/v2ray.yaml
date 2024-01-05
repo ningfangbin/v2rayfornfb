@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-01-04 09:18:21
+# 创建时间：2024-01-05 13:22:57
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -85,81 +85,88 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇪🇸_ES_西班牙","type":"ss","server":"92.38.171.89","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇪_SE_瑞典","type":"ss","server":"45.8.147.80","port":5741,"password":"Q5CEiebSuSl2qFkfE4ztG2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸_US_美国_1","type":"ss","server":"38.91.100.134","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇱_CL_智利","type":"ss","server":"190.120.230.9","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"🇩🇪_DE_德国->🇨🇳_CN_中国","type":"ss","server":"217.182.198.219","port":3306,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.21.75.246","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"sbl2.shabijichang.com"}}}
+  - {"name":"🇺🇸_US_美国->🇮🇷_IR_伊朗","type":"vmess","server":"web.parspack.com","port":80,"cipher":"auto","uuid":"5f797b91-c7ec-4178-d19e-9b069b70b446","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"zUlA9.eSmAIlkORea.sHop"}}}
+  - {"name":"🇩🇪_DE_德国","type":"ss","server":"217.182.198.219","port":3389,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
+  - {"name":"🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦","type":"vmess","server":"cm1.awslcn.info","port":25230,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"cm1.awslcn.info"}}}
+  - {"name":"🇺🇸_US_美国","type":"vmess","server":"lt2-vmess.sshmax.xyz","port":80,"cipher":"auto","uuid":"ea2928cb-f9cc-4747-ab60-d23abe3ba1e6","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"lt2-vmess.sshmax.xyz"}}}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"vmess","server":"us1.awslcn.info","port":25239,"cipher":"auto","uuid":"93ec7261-1c92-4149-848a-26b6fb9fc4ce","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"us1.awslcn.info"}}}
+  - {"name":"🇫🇷_FR_法国","type":"ss","server":"51.159.111.208","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
+  - {"name":"🇰🇿_KZ_哈萨克斯坦","type":"vmess","server":"kz-v2ray.ipracevpn.com","port":8443,"cipher":"auto","uuid":"48b10b02-2c60-4323-bc65-a11b15144745","alterId":0,"tls":true,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -182,12 +189,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇪🇸_ES_西班牙
-      - 🇸🇪_SE_瑞典
-      - 🇺🇸_US_美国_1
-      - 🇨🇱_CL_智利
-      - 🇩🇪_DE_德国->🇨🇳_CN_中国
-      - 🇺🇸_US_美国_2
+      - 🇺🇸_US_美国->🇮🇷_IR_伊朗
+      - 🇩🇪_DE_德国
+      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸_US_美国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇫🇷_FR_法国
+      - 🇰🇿_KZ_哈萨克斯坦
 
 rules:
 # 本地/局域网地址
