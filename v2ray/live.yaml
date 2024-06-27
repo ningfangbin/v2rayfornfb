@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-06-26 17:57:39
+# 客户端：Clash.Meta
+# 创建时间：2024-06-27 15:32:35
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：10
 ####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,11 +86,16 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"38.54.125.79","port":63818,"cipher":"auto","uuid":"d9ce0ed3-85f6-4e39-bfa8-f040dac45315","alterId":0,"sni":"","network":"ws","fingerprint":""}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"104.25.242.64","port":80,"cipher":"auto","uuid":"078c86a6-8dde-4dcc-a08e-378990a8b3b2","alterId":0,"network":"ws"}
-  - {"name":"🇨🇳_CN_中国","type":"vmess","server":"120.232.153.27","port":50582,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_1","type":"vmess","server":"104.20.17.186","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"ip11.freegradely.xyz","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_2","type":"vmess","server":"172.64.99.22","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"162.159.129.233","port":8880,"uuid":"6dd0972b-208d-42fb-8d46-0b6e2844f773","network":"ws"}
+  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"104.20.5.172","port":80,"uuid":"2e01ebcf-4bd6-4be4-9365-f5c623510512","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_1","type":"vmess","server":"104.19.55.49","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"ip11.freegradely.xyz","network":"ws"}
+  - {"name":"🇮🇪_IE_爱尔兰_1","type":"trojan","server":"3.248.108.183","port":22222,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"trojan","server":"223.113.54.154","port":20344,"password":"RmdXQRXg"}
+  - {"name":"🇺🇸_US_美国_3","type":"vless","server":"104.20.5.172","port":80,"uuid":"2e01ebcf-4bd6-4be4-9365-f5c623510512","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_2","type":"vmess","server":"104.18.57.111","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"ip11.freegradely.xyz","network":"ws"}
+  - {"name":"🇮🇪_IE_爱尔兰_2","type":"trojan","server":"3.248.108.183","port":22222,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_3","type":"vmess","server":"104.19.21.73","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇨🇦_CA_加拿大_4","type":"vmess","server":"104.19.21.63","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -98,9 +104,14 @@ proxy-groups:
       - DIRECT
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -109,9 +120,14 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -120,9 +136,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: 📲 电报信息
     type: select
     proxies:
@@ -130,9 +151,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -140,9 +166,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -150,9 +181,14 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -177,9 +213,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+      - 🇮🇪_IE_爱尔兰_1
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+      - 🇮🇪_IE_爱尔兰_2
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+      - 🇺🇸_US_美国->🇨🇦_CA_加拿大_4
 
 rules:
 # 本地/局域网地址
