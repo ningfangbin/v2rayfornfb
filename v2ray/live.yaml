@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-07-11 09:06:33
+# 创建时间：2024-07-11 09:08:22
 # 使用模版：V2RaySE 默认模版
 # 节点数量：10
 ####################################
@@ -86,16 +86,16 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"104.17.83.129","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"104.17.224.17","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国->🇳🇱_NL_荷兰","type":"vless","server":"172.67.187.55","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_3","type":"vless","server":"198.41.219.128","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_4","type":"vless","server":"104.18.85.157","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"104.19.47.27","port":2086,"cipher":"auto","uuid":"e9e3cc13-db48-4cc1-8c24-7626439a5339","alterId":0,"sni":"ip2.1457230.xyz","network":"ws"}
-  - {"name":"🇺🇸_US_美国_6","type":"vless","server":"104.20.51.12","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_7","type":"vless","server":"104.18.91.194","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_8","type":"vless","server":"104.17.125.172","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
-  - {"name":"🇺🇸_US_美国_9","type":"vless","server":"104.17.97.21","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_1","type":"vless","server":"104.17.172.88","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_2","type":"vless","server":"104.17.236.5","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_3","type":"vless","server":"198.41.209.246","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"104.19.59.99","port":2052,"cipher":"auto","uuid":"d6b6d982-d52f-465a-b988-85670b23f64a","alterId":0,"sni":"cdn3.freegradely.xyz","network":"ws"}
+  - {"name":"🇺🇸_US_美国->🇸🇬_SG_新加坡","type":"trojan","server":"2sg00029f670552-ac3e-f665-2405-766a52bbcde6.233235.xyz","port":710,"password":"518a6ff8-7233-4f28-8a40-d3fa82a5875d","sni":"2sg00029f670552-ac3e-f665-2405-766a52bbcde6.233235.xyz"}
+  - {"name":"🇺🇸_US_美国_5","type":"vless","server":"104.17.162.80","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_6","type":"vless","server":"104.17.53.246","port":2052,"uuid":"1dcf8b3a-8c9e-42fc-bb99-c8749604127c","network":"ws"}
+  - {"name":"🇺🇸_US_美国_7","type":"vless","server":"64.94.86.123","port":80,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","servername":"a.ssll.gay","network":"ws"}
+  - {"name":"🇺🇸_US_美国_8","type":"vless","server":"104.17.190.82","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
+  - {"name":"🇺🇸_US_美国_9","type":"vless","server":"104.16.245.116","port":80,"uuid":"435bda4c-fe5e-42c9-a3ad-15334943b38a","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -104,9 +104,9 @@ proxy-groups:
       - DIRECT
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -120,9 +120,9 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -136,9 +136,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -151,9 +151,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -166,9 +166,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -181,9 +181,9 @@ proxy-groups:
       - 🎯 全球直连
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
@@ -213,9 +213,9 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇺🇸_US_美国_1
       - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国->🇳🇱_NL_荷兰
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇺🇸_US_美国_5
       - 🇺🇸_US_美国_6
       - 🇺🇸_US_美国_7
